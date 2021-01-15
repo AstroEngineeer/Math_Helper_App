@@ -52,8 +52,8 @@ class _SetsScreenState extends State<SetsScreen> {
 
   var finalSet = <String>{};
   void union() {
-    finalSet = <String>{};
-    finalSet.union(setA).union(setB);
+    finalSet = setA;
+    finalSet.union(setB);
     setState(() {});
   }
 
@@ -73,7 +73,7 @@ class _SetsScreenState extends State<SetsScreen> {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        Set_IO(
+        SetIO(
             context: context,
             label: "Set A",
             add: addA,
@@ -85,7 +85,7 @@ class _SetsScreenState extends State<SetsScreen> {
           onPressed: swap,
           iconSize: 40,
         ),
-        Set_IO(
+        SetIO(
             context: context,
             label: "Set B",
             add: addB,
@@ -129,8 +129,9 @@ class _SetsScreenState extends State<SetsScreen> {
   }
 }
 
-class Set_IO extends StatelessWidget {
-  Set_IO({
+// ignore: must_be_immutable
+class SetIO extends StatelessWidget {
+  SetIO({
     Key key,
     @required this.context,
     @required this.label,

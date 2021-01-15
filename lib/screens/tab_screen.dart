@@ -1,4 +1,5 @@
-import 'package:Mixed/screens/date_screen.dart';
+import 'package:Mixed/screens/dates_screen.dart';
+import 'package:Mixed/screens/currency_screen.dart';
 import 'package:Mixed/screens/sets_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,7 @@ class _TabScreenState extends State<TabScreen> {
     {"title": "Differnece between dates", "screen": DateScreen()},
     {"title": "Set", "screen": SetsScreen()},
     {"title": "Matrix", "screen": DateScreen()},
-    {"title": "Currency", "screen": DateScreen()},
+    {"title": "Currency", "screen": CurrencyScreen()},
     {"title": "LCM", "screen": DateScreen()},
   ];
 
