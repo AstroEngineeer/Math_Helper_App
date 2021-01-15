@@ -22,7 +22,7 @@ class LabeledDatePicker extends StatelessWidget {
               textAlignVertical: TextAlignVertical.center,
               textAlign: TextAlign.center,
               decoration: InputDecoration(
-                  labelText: "Enter Date",
+                  labelText: "Date",
                   labelStyle:
                       TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               controller: dateController,

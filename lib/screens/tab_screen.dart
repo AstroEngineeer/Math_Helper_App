@@ -1,4 +1,5 @@
 import 'package:Mixed/screens/date_screen.dart';
+import 'package:Mixed/screens/sets_screen.dart';
 import 'package:flutter/material.dart';
 
 class TabScreen extends StatefulWidget {
@@ -9,7 +10,7 @@ class TabScreen extends StatefulWidget {
 class _TabScreenState extends State<TabScreen> {
   var screens = [
     {"title": "Differnece between dates", "screen": DateScreen()},
-    {"title": "Set", "screen": DateScreen()},
+    {"title": "Set", "screen": SetsScreen()},
     {"title": "Matrix", "screen": DateScreen()},
     {"title": "Currency", "screen": DateScreen()},
     {"title": "LCM", "screen": DateScreen()},
