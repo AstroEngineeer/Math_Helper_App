@@ -10,6 +10,7 @@ class _CurrencyScreenState extends State<CurrencyScreen> {
   // ignore: non_constant_identifier_names
   String textfied_num = "";
 
+  // ignore: missing_return
   String tens(x, y) {
     if (x == "1") {
       switch (y) {

@@ -3,6 +3,8 @@ import 'package:Mixed/screens/currency_screen.dart';
 import 'package:Mixed/screens/sets_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'math_screen.dart';
+
 class TabScreen extends StatefulWidget {
   @override
   _TabScreenState createState() => _TabScreenState();
@@ -13,16 +15,16 @@ class _TabScreenState extends State<TabScreen> {
     {"title": "Differnece between dates", "screen": DateScreen()},
     {"title": "Set", "screen": SetsScreen()},
     {"title": "Matrix", "screen": DateScreen()},
-    {"title": "Currency", "screen": CurrencyScreen()},
-    {"title": "LCM", "screen": DateScreen()},
+    {"title": "Textify", "screen": CurrencyScreen()},
+    {"title": "Math", "screen": MathScreen()},
   ];
 
   var apps = [
-    {"label": "Date", "icon": Icons.ac_unit},
-    {"label": "Set", "icon": Icons.ac_unit},
-    {"label": "matrix", "icon": Icons.ac_unit},
-    {"label": "Currency", "icon": Icons.ac_unit},
-    {"label": "LCm", "icon": Icons.ac_unit}
+    {"label": "Dates", "icon": Icons.ac_unit},
+    {"label": "Sets", "icon": Icons.ac_unit},
+    {"label": "Matrix", "icon": Icons.ac_unit},
+    {"label": "Textify", "icon": Icons.ac_unit},
+    {"label": "Math", "icon": Icons.ac_unit}
   ];
 
   int selectedIndex = 0;
