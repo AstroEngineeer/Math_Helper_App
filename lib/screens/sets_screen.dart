@@ -104,14 +104,17 @@ class _SetsScreenState extends State<SetsScreen> {
             RaisedButton(
               onPressed: union,
               child: Text("Union"),
+              color: Colors.teal,
             ),
             RaisedButton(
               onPressed: minus,
               child: Text("Minus"),
+              color: Colors.teal,
             ),
             RaisedButton(
               onPressed: intersection,
               child: Text("Intersection"),
+              color: Colors.teal,
             ),
           ],
         ),
@@ -178,10 +181,12 @@ class SetIO extends StatelessWidget {
             RaisedButton(
               onPressed: add,
               child: Text("Add"),
+              color: Colors.teal,
             ),
             RaisedButton(
               onPressed: remove,
               child: Text("Remove"),
+              color: Colors.teal,
             )
           ],
         ),

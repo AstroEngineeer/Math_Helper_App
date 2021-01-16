@@ -29,7 +29,7 @@ class CustomGridView extends StatelessWidget {
         children: [
           Text(
             "$label",
-            style: TextStyle(color: Colors.white, fontSize: 25),
+            style: TextStyle(color: Colors.black, fontSize: 25),
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -38,11 +38,11 @@ class CustomGridView extends StatelessWidget {
               child: value is String
                   ? Text(
                       value,
-                      style: TextStyle(color: Colors.white, fontSize: 25),
+                      style: TextStyle(color: Colors.black, fontSize: 25),
                     )
                   : Text(
                       value.abs().toStringAsFixed(4),
-                      style: TextStyle(color: Colors.white, fontSize: 25),
+                      style: TextStyle(color: Colors.black, fontSize: 25),
                     ),
             ),
           )

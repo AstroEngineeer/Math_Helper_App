@@ -93,6 +93,7 @@ class _MathScreenState extends State<MathScreen> {
                 width: MediaQuery.of(context).size.width * 0.9,
                 child: TextField(
                   textAlignVertical: TextAlignVertical.center,
+                  keyboardType: TextInputType.number,
                   textAlign: TextAlign.center,
                   decoration: InputDecoration(
                       labelText: "List",
@@ -110,10 +111,12 @@ class _MathScreenState extends State<MathScreen> {
             RaisedButton(
               onPressed: add,
               child: Text("Add"),
+              color: Colors.teal,
             ),
             RaisedButton(
               onPressed: remove,
               child: Text("Remove"),
+              color: Colors.teal,
             )
           ],
         ),
@@ -132,6 +135,7 @@ class _MathScreenState extends State<MathScreen> {
         RaisedButton(
           onPressed: calculate,
           child: Text("Calculate"),
+          color: Colors.teal,
         ),
         CustomGridView(cal),
       ],

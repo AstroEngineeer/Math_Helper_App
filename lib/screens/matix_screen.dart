@@ -155,12 +155,14 @@ class _MatrixScreenState extends State<MatrixScreen> {
               width: MediaQuery.of(context).size.width * .6,
               child: TextField(
                 decoration: InputDecoration(labelText: "Rows & Columns"),
+                keyboardType: TextInputType.number,
                 controller: rcController,
               ),
             ),
             RaisedButton(
               onPressed: createMatrix,
               child: Text("Create"),
+              color: Colors.teal,
             ),
           ],
         ),
@@ -168,15 +170,17 @@ class _MatrixScreenState extends State<MatrixScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             SizedBox(
-              width: MediaQuery.of(context).size.width * .6,
+              width: MediaQuery.of(context).size.width * .5,
               child: TextField(
                 decoration: InputDecoration(labelText: "Value"),
+                keyboardType: TextInputType.number,
                 controller: numController,
               ),
             ),
             RaisedButton(
               onPressed: add,
               child: Text("Add"),
+              color: Colors.teal,
             ),
             IconButton(
               onPressed: transpose,
@@ -190,18 +194,22 @@ class _MatrixScreenState extends State<MatrixScreen> {
             RaisedButton(
               onPressed: tl,
               child: Text("Topleft"),
+              color: Colors.teal,
             ),
             RaisedButton(
               onPressed: tr,
               child: Text("Topright"),
+              color: Colors.teal,
             ),
             RaisedButton(
               onPressed: bl,
               child: Text("Bottomleft"),
+              color: Colors.teal,
             ),
             RaisedButton(
               onPressed: br,
               child: Text("Bottomright"),
+              color: Colors.teal,
             ),
           ],
         ),

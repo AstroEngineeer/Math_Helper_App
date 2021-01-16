@@ -53,7 +53,11 @@ class _DateScreenState extends State<DateScreen> {
           dateController: dateController2,
           label: "Date2",
         ),
-        RaisedButton(onPressed: findDiff, child: Text("Find Differnece")),
+        RaisedButton(
+          onPressed: findDiff,
+          child: Text("Find Differnece"),
+          color: Colors.teal,
+        ),
         CustomGridView(diff),
       ],
     );

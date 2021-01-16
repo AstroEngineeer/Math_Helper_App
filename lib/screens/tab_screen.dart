@@ -39,12 +39,16 @@ class _TabScreenState extends State<TabScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.grey,
         title: Text(screens[selectedIndex]["title"]),
       ),
       body: screens[selectedIndex]["screen"],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex,
+        selectedItemColor: Colors.teal,
         onTap: selectIndex,
+        selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
+        backgroundColor: Colors.grey,
         type: BottomNavigationBarType.fixed,
         items: apps
             .map(

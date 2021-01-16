@@ -156,6 +156,7 @@ class _CurrencyScreenState extends State<CurrencyScreen> {
           padding: const EdgeInsets.all(8.0),
           child: TextField(
             textAlignVertical: TextAlignVertical.center,
+            keyboardType: TextInputType.number,
             textAlign: TextAlign.center,
             decoration: InputDecoration(
                 labelText: "Amount",
@@ -166,11 +167,13 @@ class _CurrencyScreenState extends State<CurrencyScreen> {
           ),
         ),
         RaisedButton(
-            onPressed: () {
-              textfied_num = textify();
-              setState(() {});
-            },
-            child: Text("Textify")),
+          onPressed: () {
+            textfied_num = textify();
+            setState(() {});
+          },
+          child: Text("Textify"),
+          color: Colors.teal,
+        ),
         Padding(
           padding: const EdgeInsets.all(10.0),
           child: Text(
