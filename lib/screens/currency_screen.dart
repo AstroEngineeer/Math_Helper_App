@@ -133,19 +133,20 @@ class _CurrencyScreenState extends State<CurrencyScreen> {
       text =
           tens("0", x[2]) + " hundred " + tens(x[1], x[0]) + " rupees" + text;
     if (x.length > 3)
-      text =
-          tens("0", x[2]) + " hundred " + tens(x[1], x[0]) + " rupees" + text;
+      text = x[2] != "0"
+          ? tens("0", x[2]) + " hundred " + tens(x[1], x[0]) + " rupees" + text
+          : tens(x[1], x[0]) + " rupees" + text;
     for (int i = 3; i < x.length; i += 2) {
-      if (i == 3) text = "thousand " + text;
-      if (i == 5) text = "lakh " + text;
-      if (i == 7) text = "crore " + text;
-      if (i == 9) text = "arab " + text;
-      if (i == 11) text = "kharab " + text;
-      if (i == 13) text = "nil " + text;
+      if (i == 3 && (x[i] != "0" || x[i + 1] != "0")) text = "thousand " + text;
+      if (i == 5 && (x[i] != "0" || x[i + 1] != "0")) text = "lakh " + text;
+      if (i == 7 && (x[i] != "0" || x[i + 1] != "0")) text = "crore " + text;
+      if (i == 9 && (x[i] != "0" || x[i + 1] != "0")) text = "arab " + text;
+      if (i == 11 && (x[i] != "0" || x[i + 1] != "0")) text = "kharab " + text;
+      if (i == 13 && (x[i] != "0" || x[i + 1] != "0")) text = "nil " + text;
       if (i == 15) text = "padma " + text;
       text = tens(x[i + 1], x[i]) + " " + text;
     }
-    return text;
+    return text.split(" ").join(" ");
   }
 
   @override
