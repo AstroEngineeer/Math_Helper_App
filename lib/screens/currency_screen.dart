@@ -165,7 +165,7 @@ class _CurrencyScreenState extends State<CurrencyScreen> {
             maxLength: 20,
           ),
         ),
-        FlatButton(
+        RaisedButton(
             onPressed: () {
               textfied_num = textify();
               setState(() {});

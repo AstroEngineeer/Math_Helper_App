@@ -52,8 +52,7 @@ class _SetsScreenState extends State<SetsScreen> {
 
   var finalSet = <String>{};
   void union() {
-    finalSet = setA;
-    finalSet.union(setB);
+    finalSet = setA.union(setB);
     setState(() {});
   }
 

@@ -4,6 +4,7 @@ import 'package:Mixed/screens/sets_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'math_screen.dart';
+import 'matix_screen.dart';
 
 class TabScreen extends StatefulWidget {
   @override
@@ -14,7 +15,7 @@ class _TabScreenState extends State<TabScreen> {
   var screens = [
     {"title": "Differnece between dates", "screen": DateScreen()},
     {"title": "Set", "screen": SetsScreen()},
-    {"title": "Matrix", "screen": DateScreen()},
+    {"title": "Matrix", "screen": MatrixScreen()},
     {"title": "Textify", "screen": CurrencyScreen()},
     {"title": "Math", "screen": MathScreen()},
   ];
