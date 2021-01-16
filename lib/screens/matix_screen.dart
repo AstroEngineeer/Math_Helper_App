@@ -188,30 +188,33 @@ class _MatrixScreenState extends State<MatrixScreen> {
             ),
           ],
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            RaisedButton(
-              onPressed: tl,
-              child: Text("Topleft"),
-              color: Colors.teal,
-            ),
-            RaisedButton(
-              onPressed: tr,
-              child: Text("Topright"),
-              color: Colors.teal,
-            ),
-            RaisedButton(
-              onPressed: bl,
-              child: Text("Bottomleft"),
-              color: Colors.teal,
-            ),
-            RaisedButton(
-              onPressed: br,
-              child: Text("Bottomright"),
-              color: Colors.teal,
-            ),
-          ],
+        Padding(
+          padding: const EdgeInsets.only(top: 10.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              RaisedButton(
+                onPressed: tl,
+                child: Text("Topleft"),
+                color: Colors.teal,
+              ),
+              RaisedButton(
+                onPressed: tr,
+                child: Text("Topright"),
+                color: Colors.teal,
+              ),
+              RaisedButton(
+                onPressed: bl,
+                child: Text("Bottomleft"),
+                color: Colors.teal,
+              ),
+              RaisedButton(
+                onPressed: br,
+                child: Text("Bottomright"),
+                color: Colors.teal,
+              ),
+            ],
+          ),
         ),
         create
             ? Padding(

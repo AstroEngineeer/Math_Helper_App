@@ -45,7 +45,7 @@ class _TabScreenState extends State<TabScreen> {
       body: screens[selectedIndex]["screen"],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex,
-        selectedItemColor: Colors.teal,
+        selectedItemColor: Colors.black,
         onTap: selectIndex,
         selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
         backgroundColor: Colors.grey,
