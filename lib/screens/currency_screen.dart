@@ -118,13 +118,15 @@ class _CurrencyScreenState extends State<CurrencyScreen> {
     var x = list[0].split("").reversed.toList();
     if (x.length > 3 && x.length.isEven) x.add("0");
     try {
-      if (int.parse(list[1]) > 99) {
-        list[1] = "99";
-        numController.text = list[0].toString() + ".99";
+      if (int.parse(list[1]) > 99 || list[1].length >= 3) {
+        list[1] = "00";
+        numController.text = list[0].toString() + ".00";
       }
       var y = list[1].split("");
-      if (y.length == 1) text = " DOT " + tens(y[0], "0") + " paisa";
-      if (y.length == 2) text = " DOT " + tens(y[0], y[1]) + " paisa";
+      if (y.length == 1 && y[0] != "0")
+        text = " DOT " + tens(y[0], "0") + " paisa";
+      if (y.length == 2 && (y[0] != "0" || y[1] != "0"))
+        text = " DOT " + tens(y[0], y[1]) + " paisa";
     } catch (exception) {}
 
     if (x.length == 1) text = tens("0", x[0]) + " rupees" + text;

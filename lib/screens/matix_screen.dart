@@ -100,26 +100,23 @@ class _MatrixScreenState extends State<MatrixScreen> {
     showDialog(
       context: context,
       child: SimpleDialog(title: Text("$x"), children: [
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: SizedBox(
-            height: 18 * double.parse(rcController.text),
-            child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: result
-                    .map((e) => Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: e
-                              .map((e) => Text(
-                                    e,
-                                    style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.bold),
-                                  ))
-                              .toList(),
-                        ))
-                    .toList()),
-          ),
+        SizedBox(
+          height: 20 * double.parse(rcController.text),
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: result
+                  .map((e) => Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: e
+                            .map((e) => Text(
+                                  e,
+                                  style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold),
+                                ))
+                            .toList(),
+                      ))
+                  .toList()),
         ),
       ]),
     );
