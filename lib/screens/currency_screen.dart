@@ -58,7 +58,7 @@ class _CurrencyScreenState extends State<CurrencyScreen> {
           text += "thirty";
           break;
         case "4":
-          text += "fourty";
+          text += "forty";
           break;
         case "5":
           text += "fifty";
