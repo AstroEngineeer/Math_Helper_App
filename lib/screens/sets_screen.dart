@@ -8,6 +8,7 @@ class SetsScreen extends StatefulWidget {
 class _SetsScreenState extends State<SetsScreen> {
   TextEditingController aController = TextEditingController();
   TextEditingController bController = TextEditingController();
+  String operation = "";
 
   var setA = <String>{};
   void addA() {
@@ -52,18 +53,21 @@ class _SetsScreenState extends State<SetsScreen> {
 
   var finalSet = <String>{};
   void union() {
+    operation = "A U B";
     finalSet = setA.union(setB);
     setState(() {});
   }
 
   void minus() {
     finalSet = <String>{};
+    operation = "A - B";
     finalSet = setA.difference(setB);
     setState(() {});
   }
 
   void intersection() {
     finalSet = <String>{};
+    operation = "A ∩ B";
     finalSet = setA.intersection(setB);
     setState(() {});
   }
@@ -122,6 +126,14 @@ class _SetsScreenState extends State<SetsScreen> {
           padding: const EdgeInsets.all(8.0),
           child: Text(
             finalSet.toString(),
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 20),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            operation,
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 20),
           ),

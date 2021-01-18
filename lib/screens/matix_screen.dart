@@ -17,9 +17,9 @@ class _MatrixScreenState extends State<MatrixScreen> {
     row = 0;
     column = 0;
     int n = int.parse(rcController.text);
-    if (n > 47) {
-      n = 47;
-      rcController.text = "47";
+    if (n > 37) {
+      n = 37;
+      rcController.text = "37";
     }
     for (int i = 0; i < n; i++) {
       List temp = [];
@@ -35,9 +35,9 @@ class _MatrixScreenState extends State<MatrixScreen> {
   void createResult() {
     result = [];
     int n = int.parse(rcController.text);
-    if (n > 47) {
-      n = 47;
-      rcController.text = "47";
+    if (n > 37) {
+      n = 37;
+      rcController.text = "37";
     }
     for (int i = 0; i < n; i++) {
       List temp = [];
