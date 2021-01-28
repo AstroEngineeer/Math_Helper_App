@@ -108,12 +108,14 @@ class _MatrixScreenState extends State<MatrixScreen> {
                   .map((e) => Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: e
-                            .map((e) => Text(
-                                  e,
-                                  style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                ))
+                            .map((e) => e == "0"
+                                ? Text(" ")
+                                : Text(
+                                    e,
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold),
+                                  ))
                             .toList(),
                       ))
                   .toList()),
