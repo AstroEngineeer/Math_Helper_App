@@ -37,7 +37,7 @@ class _DateScreenState extends State<DateScreen> {
         {"label": "Minutes", "value": date1.difference(date2).inMinutes},
         {"label": "Seconds", "value": date1.difference(date2).inSeconds},
       ];
-      print(diff);
+      //print(diff);
     });
   }
 
