@@ -98,30 +98,31 @@ class _MatrixScreenState extends State<MatrixScreen> {
 
   void dialog(x) {
     showDialog(
-      context: context,
-      child: SimpleDialog(title: Text("$x"), children: [
-        SizedBox(
-          height: 20 * double.parse(rcController.text),
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: result
-                  .map((e) => Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: e
-                            .map((e) => e == "0"
-                                ? Text(" ")
-                                : Text(
-                                    e,
-                                    style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.bold),
-                                  ))
-                            .toList(),
-                      ))
-                  .toList()),
-        ),
-      ]),
-    );
+        context: context,
+        builder: (context) {
+          return SimpleDialog(title: Text("$x"), children: [
+            SizedBox(
+              height: 20 * double.parse(rcController.text),
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: result
+                      .map((e) => Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: e
+                                .map((e) => e == "0"
+                                    ? Text(" ")
+                                    : Text(
+                                        e,
+                                        style: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.bold),
+                                      ))
+                                .toList(),
+                          ))
+                      .toList()),
+            ),
+          ]);
+        });
   }
 
   void add() {
