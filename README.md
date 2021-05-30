@@ -1,6 +1,6 @@
 # Mixed
 
-A new Flutter project.
+An app that does various things such as find duration between two dates, convert currency in digits to words, various matrix & set operations.
 
 ## Getting Started
 
