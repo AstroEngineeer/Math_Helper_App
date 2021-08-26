@@ -1,16 +1,8 @@
 # Mixed
 
-An app that does various things such as find duration between two dates, convert currency in digits to words, various matrix & set operations.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+An app that does various things such as 
+- Calculate the difference between two dates. (Displays the output in No. of Year, No. of Month, No. of Day, No. of Hour, No. of Minute, No. of Seconds)
+- Perform Set theory operations such as Union, Minus, Intersection for the group of data.
+- Perform matrix operations like Transpose, Lower Diagonal (Left & Right), Upper Diagonal (Left & Right) and Swivel.
+- Convert the figure into words in currency.
+- Calculate LCM, GCF, HCF, GCD, Standard Deviation and Variance.
