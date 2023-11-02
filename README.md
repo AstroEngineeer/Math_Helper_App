@@ -1,4 +1,4 @@
-# Mixed
+# Marg Helper
 
 An app that does various things such as 
 - Calculate the difference between two dates. (Displays the output in No. of Year, No. of Month, No. of Day, No. of Hour, No. of Minute, No. of Seconds)
